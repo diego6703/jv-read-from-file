@@ -21,7 +21,8 @@ public class FileWork {
             System.out.println(Constants.MISSING_FILE_EXCEPTION);
         }
         if (!stringBuilder.isEmpty()) {
-            String[] words = stringBuilder.toString().toLowerCase().split(Constants.REGEX_SEPARATOR);
+            String[] words = stringBuilder.toString().toLowerCase()
+                    .split(Constants.REGEX_SEPARATOR);
             stringBuilder.setLength(Constants.EMPTY_STRING_BUILDER_LENGTH);
             for (String word : words) {
                 if (word.charAt(Constants.INDEX_FOR_SEARCH) == Constants.FIRST_LETTER_FOR_SEARCH) {
